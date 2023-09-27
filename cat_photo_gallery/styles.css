@@ -41,3 +41,27 @@ body {
   content: "";
   width: 350px;
 }
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .gallery {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+  }
+}
+
+/* Media query for screens between 769px and 1024px (tablet/desktop) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery img {
+    max-width: 45%; /* Adjust as needed for the number of columns you want */
+  }
+}
+
+
+
+
+
