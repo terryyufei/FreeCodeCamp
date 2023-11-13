@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 0;
-    border: 0;
+    outline: 0;    
     appearance: 0;
     list-style: none;
     text-decoration: none;
@@ -42,7 +41,7 @@ body {
     color: black; 
 }
 #nav-bar a:hover{
-    color: rgb(155, 89, 216);
+    color: #710f0f
 }
 #header-img{
     height: 35px;
@@ -82,4 +81,163 @@ body {
 .form__container input[type='submit']:hover {
   background-color: orange;
   transition: background-color 1s;
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+#features .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#howitworks > iframe {
+  max-width: 560px;
+  width: 100%;
+  padding: 20px;
+  margin-left: 20%;
+}
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #d1b6b6;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: rgb(183, 130, 32);
+  transition: background-color 1s;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #d1b6b6;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+footer > ul > li > a{
+    color: #000;
+}
+
+footer > ul > li > a:hover{
+    color: #710f0f;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+
+
+/* Form Styles for Small Devices */
+@media only screen and (max-width: 600px) {
+    .form__container input[type='email'] {
+        max-width: 100%;
+    }
+
+    .form__container input[type='submit'] {
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for Medium Devices (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+    #nav-bar ul {
+        justify-content: center; /* Center links for medium devices */
+    }
+
+    #nav-bar li {
+        margin: 0 10px; /* Adjust the spacing between links for medium devices */
+    }
+}
+
+/* Media Queries for Small Devices (e.g., smartphones) */
+@media only screen and (max-width: 480px) {
+    #nav-bar ul {
+        flex-direction: column; /* Stack links vertically for small devices */
+        align-items: center; /* Center links for small devices */
+    }
+
+    #nav-bar li {
+        margin: 10px 0; /* Adjust the spacing between links for small devices */
+    }
 }
