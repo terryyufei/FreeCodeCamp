@@ -19,7 +19,7 @@ a {
 
 /* navigation bar  */
 #navbar {
-    background-color: #be3144;
+    background-color: #DA0C81;
     display: flex;
     flex-direction: column;  
     position: fixed; 
@@ -48,8 +48,7 @@ a {
 
 /* welcome section  */
 #welcome-section {
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(62deg, #3f2761 0%, #27005D 100%);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -64,7 +63,7 @@ a {
     margin: 0 auto;    
 }
 #welcome-section p{
-    color: #be3144;
+    color: #DA0C81;
     font-size: 1.5rem;
     font-weight: 300;
     margin: 0 auto;  
@@ -76,7 +75,7 @@ a {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: #45567d;
+  background: #AED2FF;
 }
 
 .projects-section-header {
@@ -115,18 +114,18 @@ a {
 }
 
 .project {
-  background: #303841;
+  background: #27005D;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
 
 .code {
-  color: #303841;
+  color: #27005D;
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-  color: #ff7f50;
+  color: #DA0C81;
 }
 
 .project-image {
@@ -148,12 +147,12 @@ a {
 
 .btn-show-all {
   font-size: 2rem;
-  background: #303841;
+  background: #27005D;
   transition: background 0.3s ease-out;
 }
 
 .btn-show-all:hover {
-  background: #be3144;
+  background: #DA0C81;
 }
 
 .btn-show-all:hover > i {
@@ -169,7 +168,7 @@ a {
 
 /* contact section  */
 #contact {
-    background-color: #303841;
+    background-color: #27005D;
     height: 80vh;
     width: 100%;
     display: flex;
@@ -200,10 +199,7 @@ a {
     opacity: 1;
 }
 
-hr {
-    border: 1px solid #be3144;
-    
-}
+
 
 /* footer  */
 footer {
@@ -211,8 +207,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: #303841;
-  border-top: 4px solid #be3144;
+  background: #27005D;
+  border-top: 4px solid #DA0C81;
   color: #f0f0f0;
 }
 
